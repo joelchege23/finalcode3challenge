@@ -1,5 +1,4 @@
-// Fetch movie details for the first movie and update the UI
-// Fetch movie details for the first movie and update the UI
+
 fetch('/films/1')
   .then(response => response.json())
   .then(movieData => {
@@ -27,14 +26,14 @@ fetch('/films/1')
         if (remainingTickets - 1 === 0) {
             buyTicketBtn.textContent = 'Sold Out';
             buyTicketBtn.disabled = true;
-            // listItem.classList.add('sold-out'); // Note: listItem is not defined here
+
         }
       }
     });
   });
 
-// Fetch movie list and populate the movie menu
-fetch('/films')
+
+  fetch('/films')
   .then(response => response.json())
   .then(movieList => {
     const filmsList = document.getElementById('films');
@@ -44,7 +43,7 @@ fetch('/films')
       listItem.textContent = movie.title;
       listItem.classList.add('film', 'item');
 
-      // Add click event listener to update movie details on menu item click
+      
       listItem.addEventListener('click', () => {
           fetch(`/films/${movie.id}`)
               .then(response => response.json())
