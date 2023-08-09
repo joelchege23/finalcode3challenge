@@ -1,16 +1,13 @@
-
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
-
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
-
 
 header {
     background-color: #222;
@@ -19,13 +16,11 @@ header {
     padding: 1rem 0;
 }
 
-
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
-
 
 .movie-details {
     display: flex;
@@ -55,7 +50,6 @@ main {
     cursor: pointer;
 }
 
-
 .movie-menu {
     flex-basis: 30%;
     border-right: 1px solid #ccc;
@@ -74,7 +68,6 @@ main {
     cursor: pointer;
 }
 
-
 footer {
     background-color: #222;
     color: #fff;
@@ -82,24 +75,23 @@ footer {
     padding: 1rem 0;
 }
 
-
 @media (max-width: 768px) {
     .movie-details {
         flex-direction: column;
         align-items: center;
     }
 
-    .movie-details img {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
+.movie-details img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
 
-    .movie-menu {
-        flex-basis: 100%;
-        border-right: none;
-        padding-right: 0;
-        margin-right: 0;
-    }
+.movie-menu {
+    flex-basis: 100%;
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+}
 }
 .film.sold-out {
     color: #999;
@@ -109,4 +101,3 @@ footer {
     background-color: #ccc;
     cursor: not-allowed;
 }
-
